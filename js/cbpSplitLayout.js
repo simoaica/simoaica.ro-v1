@@ -69,6 +69,8 @@
 
 		splitlayout.querySelector( 'a.back-left' ).addEventListener( eventtype, backToIntro );
 		splitlayout.querySelector( 'a.back-right' ).addEventListener( eventtype, backToIntro );
+		splitlayout.querySelector( '.overlay-intro-content.back-left' ).addEventListener( eventtype, backToIntro );
+		splitlayout.querySelector( '.overlay-intro-content.back-right' ).addEventListener( eventtype, backToIntro );
 	}
 
 	function reset() {
