@@ -1,5 +1,13 @@
 // Custom JS goes here :)
 
+// AOS init
+
+AOS.init({
+      offset: 200,
+      duration: 500,
+      easing: 'ease-in-sine',
+    });
+
 var photography = document.getElementById('menu-photography');
 var responsive = document.getElementById('menu-responsive');
 var prototype = document.getElementById('menu-prototype');
