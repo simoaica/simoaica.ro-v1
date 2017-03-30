@@ -1,6 +1,6 @@
 // Custom JS goes here :)
 
-// AOS init
+// AOS init ...
 
 AOS.init({
       offset: 200,
