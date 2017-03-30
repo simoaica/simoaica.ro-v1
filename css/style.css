@@ -407,8 +407,19 @@ body {
 	.intro-content { font-size: 60%; }
 }
 
+@media screen and (max-width: 70em) {
+	#nav-right, #nav-left {
+		height: 100% !important;
+	}
+	#nav-right ul li, #nav-left ul li {
+		display: block;
+		text-align: center;
+	}
+}
+
 @media screen and (max-width: 58em) {
 	body { font-size: 90%; }
+	#nav-right ul li { display: block;}
 }
 
 @media screen and (max-width: 49.4375em) {
@@ -508,4 +519,104 @@ body {
 #particule-stanga, #particule-dreapta{
 	width: 100%;
 	height: 100%;
+}
+
+/*Menu Right*/
+
+#nav-right {
+	width: 100%;
+	height: 100px;
+	float: right;
+	padding: 2em;
+}
+
+#nav-right ul {
+	margin: 0;
+	text-align: right;
+}
+
+#nav-right li {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0px 5px;
+	transition: all .5s ease-in-out
+}
+
+#nav-right li:hover {
+	color: #ecf0f1;
+	background-color: #97a8b2;
+	cursor: pointer;
+
+}
+
+/*Menu Left*/
+
+#nav-left {
+	width: 100%;
+	height: 100px;
+	float: left;
+	padding: 2em;
+}
+
+#nav-left ul {
+	margin: 0;
+	text-align: left;
+}
+
+#nav-left li {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0px 5px;
+	transition: all .5s ease-in-out
+}
+
+#nav-left li:hover {
+	color: #ecf0f1;
+	background-color: #97a8b2;
+	cursor: pointer;
+
+}
+
+#inapoi {
+	font-size: 1em;
+	line-height: 1em;
+	position: fixed;
+	z-index: 999;
+	bottom: 30px;
+	transform: translateX(-50%);
+	opacity: 0;
+	cursor: pointer;
+	visibility: hidden;
+	padding: 7px 10px;
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.3) !important;
+}
+
+.open-right #inapoi.vizibil {
+	transition: all .5s ease-in-out;
+	right: 30px;
+	visibility: visible;
+	opacity: 1;
+	color: #34495e;
+	border: 1px solid #FFF;
+}
+
+.open-left #inapoi.vizibil {
+	transition: all .5s ease-in-out;
+	left: 90px;
+	visibility: visible;
+	opacity: 1;
+	color: #34495e;
+	border: 1px solid #FFF;
+}
+
+.open-left #inapoi.vizibil:hover {
+	background-color: rgba(255,255,255,1) !important;
+}
+
+.open-right #inapoi.vizibil:hover {
+	background-color: rgba(52,73,94,1) !important;
+	color: #97a8b2;
 }
